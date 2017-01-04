@@ -32,18 +32,27 @@ class Fireball(FallingObject):
         canvas.create_oval(self.x - self.width, self.y - self.height, 
             self.x + self.width, self.y + self.height - 3, fill = "orange",
              width = 0)
+        canvas.create_polygon(self.x - 8, self.y - 25, self.x - 10, self.y - 17,
+            self.x - 6, self.y - 5, self.x - 14, self.y - 5, 
+            self.x - 15, self.y - 15, fill = "red", outline = "orange")
+        canvas.create_polygon(self.x - 5, self.y - 22, self.x - 7, self.y - 14,
+            self.x - 3, self.y - 1, self.x - 11, self.y - 1, 
+            self.x - 12, self.y - 12, fill = "yellow", outline = "orange")
         canvas.create_polygon(self.x - 2, self.y - 20, self.x + 4, self.y - 15,
             self.x + 4, self.y - 5, self.x - 12, self.y - 4, 
-            self.x - 2, self.y - 15, fill = "yellow", width = 0)
+            self.x - 2, self.y - 15, fill = "red", outline = "yellow")
+        canvas.create_polygon(self.x - 2, self.y - 10, self.x + 4, self.y - 10,
+            self.x + 4, self.y, self.x - 13, self.y , 
+            self.x - 2, self.y - 15, fill = "orange", outline = "orange")
         canvas.create_polygon(self.x + 6, self.y - 20, self.x + 12, self.y - 15,
-            self.x + 12, self.y - 5, self.x - 4, self.y - 4, 
-            self.x + 6, self.y - 15, fill = "orange", width = 0)
+            self.x + 12, self.y , self.x - 4, self.y , 
+            self.x + 6, self.y - 15, fill = "orange", outline = "orange")
         canvas.create_polygon(self.x + 6, self.y - 18, self.x + 9, self.y - 15,
             self.x + 10, self.y - 5, self.x - 4, self.y - 4, 
-            self.x + 6, self.y - 15, fill = "yellow", width = 0)
+            self.x + 6, self.y - 15, fill = "yellow", outline = "orange")
         canvas.create_polygon(self.x + 6, self.y - 15, self.x + 7, self.y - 15,
             self.x + 8, self.y - 5, self.x - 4, self.y - 4, 
-            self.x + 6, self.y - 15, fill = "orange", width = 0)
+            self.x + 6, self.y - 15, fill = "yellow", outline = "orange")
 
 class Candy(FallingObject):
 
